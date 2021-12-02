@@ -1,0 +1,72 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background:#101a64;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    color: #b3b1b1;
+}
+.dropdown-menu{
+    display: flex;
+    position: relative;
+    
+}
+.dropdown-menu > .dorp-down-iem{
+    list-style-type: none;
+    margin-left: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .5s;
+}
+.dropdown-menu>.dorp-down-iem:hover{
+    transform:translateY(20%);
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+}
+.hover-menu{
+    display:none;
+    background-color: #101a64;
+    list-style-type: none;
+    position: absolute;
+    padding: 0 .5em;
+    margin-left: -.9em;
+}
+.hover-menu>li{
+    color: #b3b1b1;
+    padding: .5em;
+    transition: .5s;   
+}
+.hover-menu>li:hover{
+    color: #ffffff;
+    transform: translate(10px);
+    transition: .5s;
+}
+.hover-item:hover .hover-menu{
+    display: block;
+    transition: 5s;
+}
+.sister-no{
+    list-style-type:none;
+    background-color: #101a64;
+    position: absolute;
+    margin-left:3.5em;
+    top: 0;
+    padding:0 .5em;
+    transition: .5s;
+    display: none;
+
+}
+.sister:hover .sister-no{
+    display: block;
+    color: gray;
+    transition: ; 
+}
+.sister-no>li:hover{
+    color: white;
+    transform: translate(10px);
+    transition: .5s;
+}
